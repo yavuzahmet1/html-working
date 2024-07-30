@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+nav ul li {
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 25px;
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 10px;
+}
