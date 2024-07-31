@@ -61,3 +61,39 @@ nav ul li a:hover {
   position: absolute;
   top: 30%;
 }
+/*About*/
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#pic {
+  display: flex;
+  background-color: bisque;
+}
+#pic img {
+  width: 575px;
+  height: 400px;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 10px;
+}
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.headings {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+p {
+  font-family: monospace;
+  font-size: 1rem;
+}
