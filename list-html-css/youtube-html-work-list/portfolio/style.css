@@ -5,6 +5,7 @@
 /* Navbar */
 nav {
   display: flex;
+  position: fixed; /*üst menuyu sabitler*/
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -47,7 +48,7 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  background: url("./view1.jpg") no-repeat center center/cover;
+  background: url("../images/view1.jpg") no-repeat center center/cover;
   height: 900px;
   width: 100%;
   z-index: -1;
@@ -73,8 +74,8 @@ nav ul li a:hover {
   background-color: bisque;
 }
 #pic img {
-  width: 575px;
-  height: 400px;
+  width: 300px;
+  height: 200px;
 }
 #intro {
   display: flex;
