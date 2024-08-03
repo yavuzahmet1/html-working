@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Harici CSS dosyasını sayfaya dahil etmek için aşağıdaki yazımı kullanıyoruz. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- preconnect etiketleri google fonts'a hızlı erişim sağlamak için kullanılır. Google Fonts, ücretsiz olarak yüksek kaliteli
+    yazı tiplerine ulaşmamızı sağlayan bir kütüphanedir. Bu kütüphane açık kaynak yazı tipleir içerir ve bu yazı tiplerini kolayca 
+    erişilebilir ve kullanılabilir hale getirir. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- "rel='preconnect'" tarayıcıya url'ye önceden bağlanmasını söyler. Böylelikle sayfanın 
+    yüklenme süresi hızlanmış olur. Çünkü içerik oluşturulmadan önce sayfa belirttiğimiz kaynakla bağlantı kurmaya başlar. Href 
+    ise tarayıcının önceden bağlanması gereken url'yi belirtir. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Burada da yine aynı şekilde tarayıcıya önceden url'ye bağlanması ve bağlanacağı url'yi belirttik. Bu adreste Google Fonts
+    tarafından kullanılan statik içeriklerin bulunduğu bir sunucu adresidir. Burada bir öncekinden farklı olarak crossorigin var.
+    Crossorigin bir öznitelik olarak kullanılır ve tarayıcıya dosyanın güvenli şekilde alınmasını sağlar. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Burada verdiğimiz url Google Fonts'tan Audiowide adlı fontun yüklenmesini sağlar. Bunu harici bir stil sayfası olarak 
+    belirtiriz -->
+    <title>My Portfolio Page</title>
+  </head>
+  <body>
+    <div id="header">
+      <!-- <div id="header"> sayfanın başlık bölümünü oluşturur. -->
+      <div class="container">
+        <!-- Başlık bölümünde içerik düzenlemek için oluşturulan bölüm. -->
+        <div id="title">
+          <!-- Başlık bölümünü düzenlemek için oluşturulan bölüm -->
+          <h1>celalselim<span>binay</span></h1>
+          <!-- <span> küçük bir metin parçasını veya diğer içerikleri işaretlemek için kullanılır. Yani aslında metne veya 
+            içeriğe daha sonra stil ve işlev eklememizi sağlar. Aslında aynı div gibi konteyner görevi görür ancak onun
+            aksine inline etkisi vardır ve küçük parçalar için kullanılır. -->
+        </div>
+        <div>
+          <!-- Navigasyon bölümü -->
+          <ul>
+            <li>
+              <a href="index.html" target="_blank">home</a>
+            </li>
+            <li>
+              <a href="about.html" target="_blank">about</a>
+            </li>
+            <li>
+              <a href="contact.html" target="_blank">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+      <!-- Sayfanın ana içeriğini barındıran bölüm -->
+      <div class="container">
+        <!-- Ana içerik bölümünde içerik düzenleme için kullanılan bölüm -->
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, saepe.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

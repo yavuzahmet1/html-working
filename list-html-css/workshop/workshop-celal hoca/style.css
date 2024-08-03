@@ -1,0 +1,133 @@
+body {
+  font-family: "Audiowide", sans-serif;
+  /* Yazı Tipini Belirledik */
+  height: 100vh;
+  /* viewport height anlamına gelir. Tarayıcının göründüğü alanın yüksekliğinin %100'ü kadar yüksekliği ifade eder.
+  Daha basit bir tabirle sayfa içeriğinin tüm pencere yüksekliğini kaplamasını sağlar. */
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
+
+.container {
+  width: 80%;
+  /* Konteyner sınıfındaki tüm öğelerin genişliğini %80 olarak belirledik. Bunun anlamı, ögelerin genişliği sayfa
+  genişliğinin %80'ini kaplayacağıdır. Üst ögesinin yani ebeveyninin % 80'i kadar genişletir. */
+  margin: auto;
+  /* "margin: auto" ögenin yatay şekilde ortalanmasını sağlar. Sol ve sağ kenar boşlukları otomatik olarak ayarlanır,
+  öge, ebeveyn ögenin ortasında yer alır. */
+  overflow: hidden;
+  /* Öğenin sınırlarını aşan içeriğin gizlenmesini sağlar. Bölümün içinde içerikler kenarlardan taşıyorsa bu taşan
+  kısımları görünmez hale getirir. */
+}
+
+#header {
+  background-color: black;
+  color: white;
+  border-bottom: 5px solid red;
+  /* border-bottom ile ögenin alt kenarına sınır ekledik. Sınır kalınlığına da 5 piksel olarak ayarladık. Solid değeri
+  ile sınırın düz ve kesintisiz bir çizgi olacağını belirttik ve kırmız renkte olmasını sağladık. */
+}
+
+#header .container {
+  display: flex;
+  /* Flexbox düzen modeli ile ögeleri düzenledik. Flexbox ile içeriğin konteyner içinde esnek elemanlar içermesini
+  sağlamış oluruz.  */
+  align-items: center;
+  /* Flex ögelerini dikeyde ortaladık. */
+  justify-content: space-between;
+  /* Flex ögelerini yatayda aralarındaki boşluğu eşit şekilde dağıtarak yerleştirir */
+}
+
+#header li {
+  display: inline;
+  /* Liste ögelerini yatay düzende yan yana gösterir */
+  padding: 0 20px;
+  /* Her iki taraftan 20 piksel iç boşluk yani padding ekler */
+}
+
+#header a {
+  text-decoration: none;
+  /* Bağlantı alt çizgisini kaldırır */
+  text-transform: uppercase;
+  /* Metni büyük harf dönüştürür */
+  color: white;
+  /* Bağlantı rengini beyaz hale getirir */
+}
+
+#title h1 {
+  text-transform: capitalize;
+  /* Başlığın ilk harfini büyük hale getirdik */
+}
+
+span {
+  color: red;
+  /* Span etiketine sahip tüm metinleri kırmızı hale getirir */
+}
+
+#main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("/banner.jpg");
+  /* Arka planı, bir linear gradient ile ayarladık. Gradient, arka plandaki renk geçişini sağlar sayfanın arka planında
+    görüntülenir. "rgba" fonksiyonu, kırmızı, yeşil, mavi ve alfa değerlerine yer verir. Burada sadece alfa değeri 
+    girildiği için %70 opaklıkta siyah bir renk ayarlanmıştır. İkinci rgba fonksiyonu da %60 opaklıkta siyah bir renk 
+    ayarlandığı anlamına gelir. Gradyanın yani renk geçişinin yönü belirtilmediği için default olarak yukarıdan aşağıya 
+    doğru %70 opak siyah renkten %60 opak siyah renge doğru geçiş sağlar. */
+  height: 90vh;
+  /* Sayfanın görünüm penceresinin yüksekliğinin %90'ı kadar bir yükseklik ayarlar. */
+  background-size: cover;
+  /* Arka plan resmini kapsayacak şekilde ölçeklendirme yapar. */
+  text-align: center;
+  /* Metni ortalar */
+  color: white;
+  /* Metin rengini beyaz yapar */
+}
+
+#main h1 {
+  font-size: 60px;
+  /* Başlık boyutu 60 piksel olarak ayarlanır. */
+  padding-top: 160px;
+  /* margin-top: 160px; Başlığın üst kısmına 160 piksel iç boşluk ekler. margin-top 160'da aynı işlevi sağlar. */
+}
+
+#main p {
+  font-size: 30px;
+  /* paragraf metninin boyutu 30 piksel olarak ayarlanır. */
+}
+
+#about,
+#contact {
+  background-color: black;
+  /* Arka plan rengi siyah */
+  color: white;
+  /* Metin rengi beyaz */
+}
+
+#about h2,
+#contact h2 {
+  color: red;
+  /* Başlık rengi kırmızı */
+  text-transform: capitalize;
+  /* Başlıkların ilk harfleri büyük */
+  text-align: center;
+  /* Başlıklar ortalanmış */
+}
+
+#about p,
+#contact p {
+  padding: 5px;
+  text-align: justify;
+  /* Paragrafların etrafına 5 piksel iç boşluk ekler */
+}
+
+#contact a {
+  text-decoration: none;
+  /* Bağlantının alt çizgisini kaldırır */
+  color: white;
+  /* Metnin rengini beyaz yapar */
+}
+
+#contact a:hover {
+  color: red;
+  /* Bağlantı üzerine gelindiğinde rengini kırmızı yapar */
+}
