@@ -5,7 +5,7 @@
 /* Navbar */
 nav {
   display: flex;
-  position: fixed; /*üst menuyu sabitler*/
+  position: fixed; /* üst menuyu sabitler */
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -97,4 +97,21 @@ nav ul li a:hover {
 p {
   font-family: monospace;
   font-size: 1rem;
+}
+
+/*portfolio*/
+#portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  /* box-sizing: border-box; */
+}
+.gallery > img {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
 }
