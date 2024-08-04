@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-item {
+  width: 200px;
+  margin: 10px;
+  background-color: cadetblue;
+}
+
+.item-1 {
+  min-height: 50px;
+}
+.item-2 {
+  min-height: 100px;
+}
+.item-3 {
+  min-height: 150px;
+}
